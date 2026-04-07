@@ -31,9 +31,13 @@ export default function ProductModal({ product, onClose }) {
             <div className="w-10 h-1 rounded-full mx-auto mt-3 mb-0" style={{ background: '#F0E6D3' }} />
 
             {/* Image */}
-            <div className="w-full aspect-square flex items-center justify-center text-[6rem]"
+            <div className="w-full aspect-square overflow-hidden"
               style={{ background: `linear-gradient(135deg, ${cat?.color || '#FF6B6B'}22, ${cat?.color || '#FF6B6B'}44)` }}>
-              {product.emoji}
+              {product.image ? (
+                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-[6rem]">{product.emoji}</div>
+              )}
             </div>
 
             {/* Body */}

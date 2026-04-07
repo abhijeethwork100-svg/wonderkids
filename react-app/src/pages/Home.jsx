@@ -54,9 +54,9 @@ export default function Home() {
             </div>
           </div>
           <div className="relative h-80 md:h-[420px] flex items-center justify-center">
-            <div className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-[40px] overflow-hidden flex items-center justify-center text-[5rem]"
+            <div className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-[40px] overflow-hidden flex items-center justify-center"
               style={{ background: 'linear-gradient(135deg, #FFE4E1 0%, #FFD1DC 30%, #E8F4FD 60%, #D4EFDF 100%)', boxShadow: '0 24px 64px rgba(0,0,0,0.15)' }}>
-              🧸
+              <img src="/images/hero-bear.png" alt="WonderKids Teddy Bear" className="w-full h-full object-cover" />
             </div>
             {[['🚀 Space Adventure', 'top-5 -right-2.5', 0], ['🎂 Birthday Planner', 'bottom-15 -left-5', 1.5], ['🎨 Creative Art', 'top-1/2 -right-7', 0.8]].map(([text, pos, delay]) => (
               <div key={text} className={`absolute ${pos} bg-white rounded-xl shadow-lg px-3.5 py-2.5 text-xs font-extrabold flex items-center gap-2 animate-float hidden md:flex`}

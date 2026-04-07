@@ -16,10 +16,14 @@ export default function ProductCard({ product, onClick }) {
 
       {/* Image Area */}
       <div className="w-full aspect-square overflow-hidden relative">
-        <div className="w-full h-full flex items-center justify-center text-5xl"
-          style={{ background: `linear-gradient(135deg, ${cat?.color || '#FF6B6B'}22, ${cat?.color || '#FF6B6B'}44)` }}>
-          {product.emoji}
-        </div>
+        {product.image ? (
+          <img src={product.image} alt={product.name} className="w-full h-full object-cover" loading="lazy" />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-5xl"
+            style={{ background: `linear-gradient(135deg, ${cat?.color || '#FF6B6B'}22, ${cat?.color || '#FF6B6B'}44)` }}>
+            {product.emoji}
+          </div>
+        )}
 
         {/* Wishlist */}
         <button className="absolute top-2.5 right-2.5 w-8 h-8 rounded-full flex items-center justify-center text-sm shadow-md transition-transform hover:scale-110"
