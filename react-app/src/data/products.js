@@ -1,14 +1,14 @@
 export const CATEGORIES = [
-  { id:'space', name:'Space Adventure', icon:'🚀', color:'#0D1B2A', gradient:'linear-gradient(135deg,#0D1B2A,#0F3460,#533483)', count:48 },
-  { id:'jungle', name:'Jungle Safari', icon:'🦁', color:'#1B4332', gradient:'linear-gradient(135deg,#1B4332,#2D6A4F,#74C69D)', count:36 },
-  { id:'ocean', name:'Ocean World', icon:'🐠', color:'#0077B6', gradient:'linear-gradient(135deg,#0077B6,#00B4D8,#90E0EF)', count:41 },
-  { id:'fantasy', name:'Fantasy Kingdom', icon:'🏰', color:'#4B0082', gradient:'linear-gradient(135deg,#200040,#4B0082,#DA70D6)', count:55 },
-  { id:'city', name:'City & Vehicles', icon:'🚗', color:'#2C3E50', gradient:'linear-gradient(135deg,#2C3E50,#3498DB)', count:62 },
-  { id:'art', name:'Creative Art', icon:'🎨', color:'#E67E22', gradient:'linear-gradient(135deg,#F39C12,#E74C3C,#9B59B6)', count:39 },
-  { id:'birthday', name:'Birthday Experience', icon:'🎂', color:'#C0392B', gradient:'linear-gradient(135deg,#FF6B6B,#FF8E53)', count:28 },
-  { id:'custom', name:'Custom Orders', icon:'✨', color:'#2980B9', gradient:'linear-gradient(135deg,#2980B9,#6DD5FA)', count:15 },
-  { id:'clothing', name:'Kids Clothing', icon:'👗', color:'#E91E63', gradient:'linear-gradient(135deg,#FFECD2,#FCB69F,#FF9A9E)', count:74 },
-  { id:'cycles', name:'Cycles & Trolleys', icon:'🚲', color:'#1A1A2E', gradient:'linear-gradient(135deg,#1A1A2E,#16213E,#EF4444)', count:22 },
+  { id:'space', name:'Space Adventure', icon:'🚀', color:'#0D1B2A', gradient:'linear-gradient(135deg,#0D1B2A,#0F3460,#533483)', image:'/images/categories/space.png', count:48 },
+  { id:'jungle', name:'Jungle Safari', icon:'🦁', color:'#1B4332', gradient:'linear-gradient(135deg,#1B4332,#2D6A4F,#74C69D)', image:'/images/categories/jungle.png', count:36 },
+  { id:'ocean', name:'Ocean World', icon:'🐠', color:'#0077B6', gradient:'linear-gradient(135deg,#0077B6,#00B4D8,#90E0EF)', image:'/images/categories/ocean.png', count:41 },
+  { id:'fantasy', name:'Fantasy Kingdom', icon:'🏰', color:'#4B0082', gradient:'linear-gradient(135deg,#200040,#4B0082,#DA70D6)', image:'/images/categories/fantasy.png', count:55 },
+  { id:'city', name:'City & Vehicles', icon:'🚗', color:'#2C3E50', gradient:'linear-gradient(135deg,#2C3E50,#3498DB)', image:'/images/categories/city.png', count:62 },
+  { id:'art', name:'Creative Art', icon:'🎨', color:'#E67E22', gradient:'linear-gradient(135deg,#F39C12,#E74C3C,#9B59B6)', image:'/images/categories/art.png', count:39 },
+  { id:'birthday', name:'Birthday Experience', icon:'🎂', color:'#C0392B', gradient:'linear-gradient(135deg,#FF6B6B,#FF8E53)', image:'/images/categories/birthday.png', count:28 },
+  { id:'custom', name:'Custom Orders', icon:'✨', color:'#2980B9', gradient:'linear-gradient(135deg,#2980B9,#6DD5FA)', image:'/images/categories/custom.png', count:15 },
+  { id:'clothing', name:'Kids Clothing', icon:'👗', color:'#E91E63', gradient:'linear-gradient(135deg,#FFECD2,#FCB69F,#FF9A9E)', image:'/images/categories/clothing.png', count:74 },
+  { id:'cycles', name:'Cycles & Trolleys', icon:'🚲', color:'#1A1A2E', gradient:'linear-gradient(135deg,#1A1A2E,#16213E,#EF4444)', image:'/images/categories/cycles.png', count:22 },
 ];
 
 export const PRODUCTS = [

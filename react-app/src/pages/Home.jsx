@@ -85,9 +85,9 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-extrabold mb-3" style={H}>10 Magical Categories</h2>
             <p className="text-sm max-w-md mx-auto" style={{ color: '#636E72' }}>Each world is a unique adventure — tap to explore toys, activities, and surprises</p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 md:gap-5">
-            {CATEGORIES.map((c, i) => (
-              <CategoryCard key={c.id} category={c} large={[3, 6].includes(i)} />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 md:gap-5">
+            {CATEGORIES.map((c) => (
+              <CategoryCard key={c.id} category={c} />
             ))}
           </div>
         </div>
