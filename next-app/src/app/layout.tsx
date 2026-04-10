@@ -28,9 +28,41 @@ const baloo2 = Baloo_2({
 });
 
 export const metadata: Metadata = {
-  title: "WonderKids — India's Most Magical Toy Store",
+  title: {
+    default: "WonderKids — India's Most Magical Toy Store",
+    template: "%s | WonderKids",
+  },
   description:
     "Premium toys, magical birthday experiences, and curated adventures for kids aged 0-13. Safe, eco-friendly, and endlessly fun. Free delivery across India on orders above ₹999.",
+  keywords: [
+    "toys",
+    "kids toys",
+    "children toys",
+    "toy store India",
+    "buy toys online",
+    "LEGO",
+    "educational toys",
+    "birthday party",
+  ],
+  authors: [{ name: "WonderKids" }],
+  openGraph: {
+    title: "WonderKids — India's Most Magical Toy Store",
+    description:
+      "Premium toys for kids aged 0-13. Safe, eco-friendly, and endlessly fun.",
+    url: "https://wonderkids.in",
+    siteName: "WonderKids",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WonderKids — India's Most Magical Toy Store",
+    description: "Premium toys for kids aged 0-13.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
