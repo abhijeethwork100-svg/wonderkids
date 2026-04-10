@@ -3,6 +3,11 @@ import { Nunito, Inter, Baloo_2 } from "next/font/google";
 import "./globals.css";
 import { StoreProvider } from "@/context/StoreContext";
 import Toast from "@/components/Toast";
+import PromoBar from "@/components/layout/PromoBar";
+import Header from "@/components/layout/Header";
+import Newsletter from "@/components/layout/Newsletter";
+import Footer from "@/components/layout/Footer";
+import BottomNav from "@/components/layout/BottomNav";
 
 const nunito = Nunito({
   variable: "--font-heading-var",
@@ -40,7 +45,12 @@ export default function RootLayout({
     >
       <body className="bg-cream text-body min-h-full flex flex-col font-body">
         <StoreProvider>
-          {children}
+          <PromoBar />
+          <Header />
+          <main className="min-h-screen pb-[72px] md:pb-0">{children}</main>
+          <Newsletter />
+          <Footer />
+          <BottomNav />
           <Toast />
         </StoreProvider>
       </body>
