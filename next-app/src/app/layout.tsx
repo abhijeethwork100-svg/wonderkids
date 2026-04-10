@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Nunito, Inter, Baloo_2 } from "next/font/google";
 import "./globals.css";
+import { StoreProvider } from "@/context/StoreContext";
+import Toast from "@/components/Toast";
 
 const nunito = Nunito({
   variable: "--font-heading-var",
@@ -37,7 +39,10 @@ export default function RootLayout({
       className={`${nunito.variable} ${inter.variable} ${baloo2.variable} h-full antialiased`}
     >
       <body className="bg-cream text-body min-h-full flex flex-col font-body">
-        {children}
+        <StoreProvider>
+          {children}
+          <Toast />
+        </StoreProvider>
       </body>
     </html>
   );
